@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("img/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: cursive;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+svg {
+  fill: white;
+  background: rgba(219, 214, 214, 0.3);
+  padding: 20px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.wrapper {
+  padding: 20px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 10px rgba(251, 249, 249, 0.1);
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+.plates {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.plates label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.plates input {
+  display: none;
+}
+
+.plates input + label:before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+.plates input:checked + label:before {
+  content: "✔️";
+}
+
+/* 🌮 */
+
+.add_items {
+  margin: 20px;
+}
+
+.add_items input {
+  padding: 5px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add_items input[type="submit"] {
+  background: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.add_items input[type="text"] {
+  transition: 0.5s;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.add_items input[type="text"]:focus {
+  transition: 0.5s;
+  border: 1px solid blueviolet;
+}
+
+#delete {
+  background: blueviolet;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  padding: 7px 10px;
+}
